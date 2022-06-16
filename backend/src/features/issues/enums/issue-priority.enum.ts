@@ -1,7 +1,7 @@
 export enum IssuePriority {
-  LOWEST = 'Lowest',
-  LOW = 'Low',
-  MEDIUM = 'Medium',
-  HIGH = 'High',
-  HIGHEST = 'Highest',
+  MINIMA = 'Minima',
+  BAJA = 'Baja',
+  MEDIA = 'Media',
+  ALTA = 'Alta',
+  SUPER = 'Super',
 }

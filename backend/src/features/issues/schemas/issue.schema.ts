@@ -14,13 +14,13 @@ export class Issue {
   @Prop({ required: true, minlength: 5 })
   title: string;
 
-  @Prop({ enum: IssueType, default: IssueType.STORY })
+  @Prop({ enum: IssueType, default: IssueType.REPORTE })
   type: string;
 
   @Prop({ enum: IssueStatus, default: IssueStatus.BACKLOG })
   status: string;
 
-  @Prop({ enum: IssuePriority, default: IssuePriority.MEDIUM })
+  @Prop({ enum: IssuePriority, default: IssuePriority.MEDIA })
   priority: string;
 
   @Prop({ default: 0 })

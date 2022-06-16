@@ -1,5 +1,5 @@
 export enum IssueType {
-  STORY = 'Story',
-  TASK = 'Task',
+  REPORTE = 'Reporte',
+  TRABAJO = 'Trabajo',
   BUG = 'Bug',
 }

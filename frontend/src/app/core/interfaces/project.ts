@@ -14,4 +14,4 @@ export interface Project {
   assignees: User[];
 }
 
-export type ProjectCategory = 'Software' | 'Marketing' | 'Business';
+export type ProjectCategory = 'Software' | 'Marketing' | 'Negocios';

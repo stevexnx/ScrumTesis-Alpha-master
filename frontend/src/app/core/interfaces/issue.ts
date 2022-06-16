@@ -1,6 +1,6 @@
 import { User } from './user';
 
-export type IssueType = 'Story' | 'Task' | 'Bug';
+export type IssueType = 'Reporte' | 'Trabajo' | 'Bug';
 
 export enum IssueStatus {
   BACKLOG = 'Backlog',
@@ -17,11 +17,11 @@ export const IssueStatusDisplay = {
 };
 
 export enum IssuePriority {
-  LOWEST = 'Lowest',
-  LOW = 'Low',
-  MEDIUM = 'Medium',
-  HIGH = 'High',
-  HIGHEST = 'Highest',
+  LOWEST = 'Minima',
+  LOW = 'Baja',
+  MEDIUM = 'Media',
+  HIGH = 'Alta',
+  HIGHEST = 'Super',
 }
 export interface Issue {
   id: string;
