@@ -1,6 +1,6 @@
 import { User } from './user';
 
-export type IssueType = 'Story' | 'Task' | 'Bug';
+export type IssueType = 'Reporte' | 'Trabajo' | 'Bug';
 
 export enum IssueStatus {
   BACKLOG = 'Backlog',

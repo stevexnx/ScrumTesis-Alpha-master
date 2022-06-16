@@ -2,7 +2,7 @@
   <h3 class="column-title">
     {{ status | issueStatus }}
     <ng-container *ngIf="anyFilter | async"
-      >{{ totalIssuesFiltered | async }} of
+      >{{ totalIssuesFiltered | async }} de
     </ng-container>
     {{ issuesCount$ | async }}
   </h3>
