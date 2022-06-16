@@ -20,7 +20,7 @@ export class Issue {
   @Prop({ enum: IssueStatus, default: IssueStatus.BACKLOG })
   status: string;
 
-  @Prop({ enum: IssuePriority, default: IssuePriority.MEDIUM })
+  @Prop({ enum: IssuePriority, default: IssuePriority.MEDIA })
   priority: string;
 
   @Prop({ default: 0 })
