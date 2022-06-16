@@ -8,22 +8,12 @@
   [iconSize]="20"
   [className]="'btn-empty'"
   nz-tooltip
-  nzTooltipTitle="Accion"
+  nzTooltipTitle="Acción"
 >
 </app-button>
 
 <nz-dropdown-menu #menu="nzDropdownMenu">
   <ul nz-menu>
-    <li nz-menu-item class="toggle-on-hover">
-      <app-svg-icon name="file-move" [size]="20"></app-svg-icon>
-      <span>Mover</span>
-      <span class="not-implemented">Not implementado</span>
-    </li>
-    <li nz-menu-item class="toggle-on-hover">
-      <app-svg-icon name="file-copy" [size]="20"></app-svg-icon>
-      <span>Clonar</span>
-      <span class="not-implemented">Not implementado</span>
-    </li>
     <li nz-menu-item (click)="onDeleteIssue(templContent)">
       <app-svg-icon name="file-delete" [size]="20"></app-svg-icon>Borrar
     </li>
@@ -32,7 +22,7 @@
 
 <ng-template #templContent>
   <p>
-    Esta seguro que desea eliminar este comentario ?
+    ¿Está seguro que desea eliminar este comentario?
   </p>
-  <p>Si no esta seguro presione cancelar.</p>
+  <p>Si no está seguro presione cancelar.</p>
 </ng-template>

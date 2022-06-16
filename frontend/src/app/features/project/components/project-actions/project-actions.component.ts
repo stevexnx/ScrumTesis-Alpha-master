@@ -35,7 +35,7 @@ export class ProjectActionsComponent implements OnDestroy {
   onDeleteProject(): void {
     this.modalService.confirm({
       nzTitle: `Eliminar ${this.project.name}`,
-      nzContent: "Este proyecto y todo lo que hay en el se perdera.",
+      nzContent: "Este proyecto y todo lo que hay en el se perderá.",
       nzOkText: 'Eliminar',
       nzOkDanger: true,
       nzOnOk: () => new Promise(resolve => {

@@ -11,7 +11,7 @@
         />
         <ng-template #nameErrorTempl let-control>
           <ng-container *ngIf="control.hasError('required')">
-            Este campo no puede estar vacio
+            Este campo no puede estar vacío
           </ng-container>
           <ng-container *ngIf="control.hasError('minlength')">
             Debes introducir almenos 5 caracteres
@@ -23,7 +23,7 @@
       </nz-form-control>
     </nz-form-item>
     <nz-form-item class="small-form-item">
-      <nz-form-label nzRequired>Key</nz-form-label>
+      <nz-form-label nzRequired>Clave</nz-form-label>
       <nz-form-control nzHasFeedback [nzErrorTip]="keyErrorTempl">
         <input class="input-key" nz-input formControlName="key" />
         <ng-template #keyErrorTempl let-control>
@@ -48,7 +48,7 @@
     </nz-form-item>
 
     <nz-form-item class="small-form-item">
-      <nz-form-label>Categoria del proyecto</nz-form-label>
+      <nz-form-label>Categoría del proyecto</nz-form-label>
       <nz-form-control>
         <nz-select nzShowSearch formControlName="category">
           <nz-option
@@ -61,7 +61,7 @@
     </nz-form-item>
 
     <nz-form-item>
-      <nz-form-label>Descripcion</nz-form-label>
+      <nz-form-label>Descripción</nz-form-label>
       <nz-form-control>
         <quill-editor
           formControlName="description"
@@ -73,7 +73,7 @@
     </nz-form-item>
 
     <nz-form-item *ngIf="editMode" class="default-form-item">
-      <nz-form-label nzRequired>Lider del proyecto</nz-form-label>
+      <nz-form-label nzRequired>Líder del proyecto</nz-form-label>
       <nz-form-control>
         <project-lead-select
           [form]="projectForm"

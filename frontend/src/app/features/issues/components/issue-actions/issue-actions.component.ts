@@ -43,9 +43,9 @@ export class IssueActionsComponent implements OnDestroy {
 
   onDeleteIssue(templContent: TemplateRef<{}>): void {
     this.modalService.confirm({
-      nzTitle: `Delete ${this.issue.projectKey}-${this.issue.key}`,
+      nzTitle: `Borrar ${this.issue.projectKey}-${this.issue.key}`,
       nzContent: templContent,
-      nzOkText: 'Delete',
+      nzOkText: 'Borrar',
       nzOkDanger: true,
       nzOnOk: () =>
         new Promise((resolve) => {

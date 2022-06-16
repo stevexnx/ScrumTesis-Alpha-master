@@ -19,7 +19,7 @@
       <input nz-input formControlName="title" />
       <ng-template #summaryErrorTempl let-control>
         <ng-container *ngIf="control.hasError('required')">
-          El resumen no puede estar vacio
+          El resumen no puede estar vacío
         </ng-container>
         <ng-container *ngIf="control.hasError('minlength')">
           Debe tener al menos 5 caracteres 
@@ -29,7 +29,7 @@
   </nz-form-item>
 
   <nz-form-item>
-    <nz-form-label>Descripcion</nz-form-label>
+    <nz-form-label>Descripción</nz-form-label>
     <nz-form-control>
       <quill-editor
         formControlName="description"

@@ -71,8 +71,8 @@ export class IssueCommentsItemComponent {
 
   onDeleteComment(id: string): void {
     this.modalService.confirm({
-      nzTitle: 'Desea borrar este comentario?',
-      nzContent: "No se podra recuperar",
+      nzTitle: '¿Desea borrar este comentario?',
+      nzContent: "No se podrá recuperar",
       nzOkText: 'Eliminar',
       nzOkDanger: true,
       nzOnOk: () => new Promise(resolve => {
@@ -91,7 +91,7 @@ export class IssueCommentsItemComponent {
     });
   }
 
-  cancel() {
+  cancelar() {
     this.commentEditControl.setValue('');
     this.changeEditMode();
     this.store.dispatch(setIssueEditing({ isEditing: false }));

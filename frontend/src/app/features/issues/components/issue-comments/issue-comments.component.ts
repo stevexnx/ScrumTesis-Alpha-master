@@ -84,7 +84,7 @@ export class IssueCommentsComponent implements OnInit, OnDestroy {
       )
       .subscribe(() => {
         this.isLoading = false;
-        this.cancel();
+        this.cancelar();
       });
   }
 
@@ -146,7 +146,7 @@ export class IssueCommentsComponent implements OnInit, OnDestroy {
     this.changeEditMode();
   }
 
-  cancel(): void {
+  cancelar(): void {
     this.commentControl.setValue('');
     this.changeEditMode();
   }

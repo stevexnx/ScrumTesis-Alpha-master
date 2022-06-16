@@ -2,7 +2,7 @@ import { QuillModules } from "ngx-quill";
 
 export class QuillEditorUtil {
   static getDefaultOps() {
-    return [{ insert: 'Añade una descripcion' }];
+    return [{ insert: 'Añade una descripción' }];
   }
 
   static getDefaultModuleOptions(): QuillModules {

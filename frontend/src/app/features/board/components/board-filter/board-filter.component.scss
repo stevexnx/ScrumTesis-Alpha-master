@@ -77,8 +77,8 @@ nz-divider {
 
 .is-active {
   color: rgb(244, 245, 247) !important;
-  background-color: #253858;
+  background-color: #00A8CC;
   &:hover {
-    background-color: lighten(#253858, 10%);
+    background-color: lighten(#00A8CC, 10%);
   }
 }

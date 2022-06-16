@@ -68,7 +68,7 @@ export class ProjectPeoplePageComponent implements OnInit {
   onDeletePeople(user: User): void {
     this.modalService.confirm({
       nzTitle: `Eliminar ${user.name}`,
-      nzContent: `${user.name} Ya no formara parte del proyecto`,
+      nzContent: `${user.name} ya no formará parte del proyecto`,
       nzOkText: 'Eliminar',
       nzOkDanger: true,
       nzOnOk: () => new Promise(resolve => {

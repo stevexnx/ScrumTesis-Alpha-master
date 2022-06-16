@@ -15,7 +15,7 @@
         [modules]="defaultEditorOptions"
         format="object"
         [styles]="{ 'min-height': '100px' }"
-        placeholder="añadir comentario"
+        placeholder="Añadir comentario"
         (onEditorCreated)="editorCreated($event)"
         [trimOnValidation]="true"
         [required]="true"
@@ -30,7 +30,7 @@
         >
           Guardar
         </button>
-        <app-button className="btn-empty" (click)="cancel()">Cancelar</app-button>
+        <app-button className="btn-empty" (click)="cancelar()">Cancelar</app-button>
       </div>
     </ng-container>
     <ng-template #readonlyCommentTempl>

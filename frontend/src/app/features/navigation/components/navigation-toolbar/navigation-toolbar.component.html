@@ -19,7 +19,9 @@
     </button>
     <nz-dropdown-menu #projectsMenu="nzDropdownMenu">
       <ul nz-menu nzMode="horizontal">
-        <li nz-menu-group nzTitle="Recent">
+
+        <li nz-menu-group nzTitle="">
+          
           <ul>
             <li
               nz-menu-item
@@ -47,46 +49,7 @@
     </nz-dropdown-menu>
   </div>
   <div class="nav-options">
-    <button
-      nz-button
-      nzType="text"
-      nzTrigger="click"
-      nz-dropdown
-      [nzDropdownMenu]="peopleMenu"
-      [nzOverlayStyle]="{ 'min-width': '180px' }"
-    >
-      Participantes
-      <i nz-icon nzType="down"></i>
-    </button>
-    <nz-dropdown-menu #peopleMenu="nzDropdownMenu">
-      <ul nz-menu nzMode="horizontal">
-        <li nz-menu-group nzTitle="Tus colaboradores">
-          <ul>
-            <li nz-menu-item class="toggle-on-hover">
-              <i nz-icon nzType="plus" nzTheme="outline"></i>
-              <span>Invitar a equipo</span>
-              <span class="not-implemented">No implementado</span>
-            </li>
-          </ul>
-        </li>
-        <li nz-menu-group nzTitle="Tus equipos">
-          <ul>
-            <li nz-menu-item class="toggle-on-hover">
-              <i nz-icon nzType="plus" nzTheme="outline"></i>
-              <span>Crear un Equipo</span>
-              <span class="not-implemented">No implementado</span>
-            </li>
-          </ul>
-        </li>
-        <nz-divider></nz-divider>
-        <li nz-menu-item class="toggle-on-hover">
-          <span>Buscar Participantes y Grupos</span>
-          <span class="not-implemented">Not implemented</span>
-        </li>
-      </ul>
-    </nz-dropdown-menu>
-  </div>
-  <div class="create-issue-button">
+    
     <button
       nz-button
       nzType="primary"
@@ -111,17 +74,9 @@
     </div>
     <nz-dropdown-menu #userMenu="nzDropdownMenu" nzPlacement="bottomRight">
       <ul nz-menu class="user-menu">
+       
         <li nz-menu-item class="toggle-on-hover">
-          <span>Perfil</span>
-          <span class="not-implemented">No implementado</span>
-        </li>
-        <li nz-menu-item class="toggle-on-hover">
-          <span>Editar Perfil</span>
-          <span class="not-implemented">No implementado</span>
-        </li>
-        <nz-divider></nz-divider>
-        <li nz-menu-item class="toggle-on-hover">
-          <span (click)="deleteLocalStorage()" routerLink="">Log out</span>
+          <span (click)="deleteLocalStorage()" routerLink="">Desconectarse</span>
         </li>
       </ul>
     </nz-dropdown-menu>

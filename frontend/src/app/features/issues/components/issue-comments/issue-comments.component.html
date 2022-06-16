@@ -12,7 +12,7 @@
         [modules]="defaultEditorOptions"
         format="object"
         [styles]="{ 'min-height': '100px' }"
-        placeholder="añadir comentario"
+        placeholder="Añadir comentario"
         (onEditorCreated)="editorCreated($event)"
         [trimOnValidation]="true"
         [required]="true"
@@ -27,7 +27,7 @@
         >
           Guardar
         </button>
-        <app-button className="btn-empty" (click)="cancel()">Cancelar</app-button>
+        <app-button className="btn-empty" (click)="cancelar()">Cancelar</app-button>
       </div>
     </ng-container>
 
@@ -40,7 +40,7 @@
           (focus)="onFocus()"
         />
         <div class="pro-tip">
-          <strong>Atajo: </strong>presione <span>M</span>Para comentar
+          <strong>Atajo: </strong>Presione <span>M</span>Para comentar
         </div>
       </nz-form-item>
     </ng-template>

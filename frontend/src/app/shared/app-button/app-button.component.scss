@@ -35,7 +35,7 @@
 
   &:focus,
   &:active {
-    outline-color: #1890ff;
+    outline-color: #00A8CC;
   }
 
   &.no-padding-left {
@@ -77,7 +77,7 @@
 @include buttonBackground(success, $success);
 
 .btn-secondary {
-  color: #42526e;
+  color: #00A8CC;
   font-weight: 400;
   background: $secondary;
 
@@ -96,7 +96,7 @@
 .btn-empty {
   background: white;
   outline: none;
-  color: #42526e;
+  color: #00A8CC;
 
   &:focus,
   &:active {
@@ -113,7 +113,7 @@
     }
     &.is-active {
       background-color: rgb(222, 235, 255);
-      color: #42526e;
+      color: #00A8CC;
     }
   }
 }
@@ -123,7 +123,7 @@
 }
 
 .is-active {
-  color: #0052cc;
+  color: #00A8CC;
   background-color: #d2e5fe;
 }
 

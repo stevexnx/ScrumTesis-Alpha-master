@@ -1,7 +1,8 @@
 textarea {
+  /*TAMAÑO Y COLOR DE LA TAREA CREADA*/
   border-color: transparent;
   padding: 10px 8px;
-  line-height: 1.28;
+  line-height: 0.5;
   resize: none;
   box-shadow: 0 0 0 1px transparent;
   transition: background 0.1s ease 0s;
@@ -13,7 +14,7 @@ textarea {
   appearance: none;
   width: 100%;
   height: auto;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
   margin-left: -8px;
   color: rgba(23, 43, 77, 1);

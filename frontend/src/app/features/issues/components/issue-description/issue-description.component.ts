@@ -74,7 +74,7 @@ export class IssueDescriptionComponent implements OnChanges {
 
   }
 
-  cancel(): void {
+  cancelar(): void {
     this.descriptionControl.patchValue(this.issue.description);
     this.changeEditMode();
   }
