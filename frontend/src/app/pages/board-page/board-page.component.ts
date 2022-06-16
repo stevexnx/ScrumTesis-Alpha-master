@@ -27,7 +27,7 @@ export class BoardPageComponent implements OnInit {
   index: number = 0;
 
   constructor(private store: Store<AppState>, private titleService: Title, private _router: Router) {
-    this.titleService.setTitle('Project board - Kanban Project Management');
+    this.titleService.setTitle('Scrumfull');
   }
 
   ngOnInit() {
