@@ -1,0 +1,22 @@
+<div class="form-container">
+    <h1 style="text-align: center;">Registro</h1>
+    <form (submit)="onSubmit()" autocomplete="false" [formGroup]="registerForm">
+        <mat-form-field appearance="outline"> 
+            <input matInput formControlName="name" placeholder="Nombre">
+          </mat-form-field>
+      <mat-form-field appearance="outline"> 
+        <input matInput formControlName="email" placeholder="Email">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <input type="password" matInput formControlName="password" placeholder="Contrasena">
+      </mat-form-field>
+    
+      <div class="center margin-top">
+        <button class="button" mat-raised-button color="primary">Registrarme</button>
+      </div>
+      <a class="center margin-top" routerLink="">Ir a login</a>
+      <br>
+      <span class="center margin-top">Al ingresar acepta nuestra politicas y privacidades de uso.</span>
+    </form>
+  </div>
+  

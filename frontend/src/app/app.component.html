@@ -1,0 +1,36 @@
+<nz-layout *ngIf="canMenuVisible" class="app-layout">
+  <nz-header>
+    <app-navigation-toolbar
+      [projects$]="projects$"
+      [currentUser]="currentUser$ | async"
+    ></app-navigation-toolbar>
+  </nz-header>
+
+  <nz-layout *ngIf="canMenuVisible">
+    <nz-sider
+      class="menu-sidebar"
+      nzCollapsible
+      nzWidth="256px"
+      nzBreakpoint="xl"
+      nzTheme="light"
+      [(nzCollapsed)]="isSidebarCollapsed"
+      (nzCollapsedChange)="onSidebarCollapsed($event)"
+    >
+      <app-navigation-sidebar></app-navigation-sidebar>
+    </nz-sider>
+    <nz-layout *ngIf="canMenuVisible">
+      <nz-content>
+        <router-outlet></router-outlet>
+      </nz-content>
+      <nz-footer
+        >Scrufull</nz-footer
+      >
+    </nz-layout>
+  </nz-layout>
+</nz-layout>
+
+<app-svg-definitions *ngIf="canMenuVisible"></app-svg-definitions>
+
+<div class="center" class="content-body" *ngIf="!canMenuVisible">
+  <router-outlet></router-outlet>
+</div>
