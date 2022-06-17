@@ -34,7 +34,7 @@ export class ProjectPeoplePageComponent implements OnInit {
     private actionSubject: ActionsSubject,
     private titleService: Title
   ) {
-    this.titleService.setTitle('Settings | People - Kanban Project Management');
+    this.titleService.setTitle('Configuración | Participantes - Scrumfull');
   }
 
   ngOnInit(): void {
