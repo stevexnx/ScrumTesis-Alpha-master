@@ -26,7 +26,7 @@ export class ProjectEditPageComponent implements OnInit {
     private store: Store<{}>,
     private titleService: Title
   ) {
-    this.titleService.setTitle('Settings | Details - Kanban Project Management');
+    this.titleService.setTitle('Configuración | Detalles - Scrumfull');
   }
 
   ngOnInit(): void {

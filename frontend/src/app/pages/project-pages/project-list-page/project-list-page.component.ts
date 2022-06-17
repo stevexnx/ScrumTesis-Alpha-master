@@ -34,7 +34,7 @@ export class ProjectListPageComponent implements OnInit {
     private router: Router,
     private titleService: Title
   ) {
-    this.titleService.setTitle('All projects - Kanban Project Management');
+    this.titleService.setTitle('Todos los proyectos - Scrumfull');
   }
 
   ngOnInit(): void {

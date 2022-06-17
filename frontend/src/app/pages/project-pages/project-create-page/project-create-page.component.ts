@@ -19,7 +19,7 @@ export class ProjectCreatePageComponent implements OnInit {
   currentUser$: Observable<User>;
 
   constructor(private store: Store<{}>, private titleService: Title) {
-    this.titleService.setTitle('Create project - Kanban Project Management');
+    this.titleService.setTitle('Crear proyecto - Scrumfull');
   }
 
   ngOnInit(): void {
