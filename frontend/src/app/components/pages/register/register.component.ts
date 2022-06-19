@@ -32,12 +32,13 @@ export class RegisterComponent implements OnInit {
       }
     )
   }
+  private emailPattern: any = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   buildForm(): FormGroup {
     return this.fb.group({
       name: ['',Validators.required],
-      email: ['', [Validators.required,Validators.email]],
-      password: ['', Validators.required],
+      email: ['', [Validators.required,Validators.email,Validators.pattern(this.emailPattern)]],
+      password: ['', [Validators.required,Validators.minLength(6)]]
     })
   }
 
