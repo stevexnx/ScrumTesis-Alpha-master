@@ -126,7 +126,7 @@ export class ProjectFormComponent implements OnInit, OnDestroy {
     }
   }
 
-  onCancel(): void {
+  onCancelar(): void {
     this.location.back();
   }
 }
