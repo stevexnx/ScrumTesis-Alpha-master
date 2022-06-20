@@ -4,13 +4,14 @@
 @import "~quill/dist/quill.snow.css";
 
 html, body { height: 0%; 
-  background-image: url("https://cdn.discordapp.com/attachments/980597217398231040/988226454993113088/unknown.png");
+  background-image: url("https://cdn.discordapp.com/attachments/980597217398231040/988237848912224307/unknown.png");
   background-repeat:no-repeat;
   background-size: cover;
   background-position: 100% 0%;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .form-container{
+    opacity: 0.7;
     display: block;
     max-width: 400px;
     background: #eceff1;
