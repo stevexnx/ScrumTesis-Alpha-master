@@ -14,7 +14,7 @@
       nz-dropdown
       [nzDropdownMenu]="projectsMenu"
     >
-      Proyectos
+    <i nz-icon nzType="project" nzTheme="fill"></i> Proyectos
       <i nz-icon nzType="down"></i>
     </button>
     <nz-dropdown-menu #projectsMenu="nzDropdownMenu">
@@ -57,7 +57,7 @@
       (click)="openCreateIssueModal()"
       [disabled]="(isCurrentProject$ | async) === false"
     >
-      Crear tarea
+    <i nz-icon nzType="plus-circle" nzTheme="fill"></i>Crear tarea
     </button>
   </div>
   <div class="nav-options">

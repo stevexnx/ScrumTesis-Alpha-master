@@ -37,17 +37,17 @@
   [class.is-active]="onlyMyIssues | async"
   (click)="toggleOnlyMyIssues()"
 >
-  Mis tareas
+<i nz-icon nzType="read" nzTheme="outline"></i>Mis tareas
 </button>
 <button
   nz-button
   [class.is-active]="recentlyUpdatedIssues | async"
   (click)="toggleRecentlyUpdatedIssues()"
 >
-  Actualizado recientemente
+<i nz-icon nzType="loading" nzTheme="outline"></i> Actualizado recientemente
 </button>
 
 <ng-container *ngIf="anyFilter | async">
   <nz-divider nzType="vertical"></nz-divider>
-  <button nz-button (click)="clearAll()">Limpiar</button>
+  <button nz-button (click)="clearAll()"><i nz-icon nzType="clear" nzTheme="outline"></i>Limpiar</button>
 </ng-container>

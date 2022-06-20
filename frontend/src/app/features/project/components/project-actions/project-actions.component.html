@@ -17,8 +17,8 @@
       nz-menu-item
       [routerLink]="['/projects', project.id, 'settings', 'details']"
     >
-      Configuración del Proyecto
+    <i nz-icon nzType="tool" nzTheme="outline"></i>Configuración 
     </li>
-    <li nz-menu-item (click)="onDeleteProject()">Eliminar</li>
+    <li nz-menu-item (click)="onDeleteProject()"><i nz-icon nzType="delete" nzTheme="outline"></i>Eliminar</li>
   </ul>
 </nz-dropdown-menu>
