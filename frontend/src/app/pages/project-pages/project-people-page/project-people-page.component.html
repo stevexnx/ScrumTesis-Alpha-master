@@ -1,7 +1,7 @@
 <div *ngIf="isCurrentProject$ | async; else projectNotSelected">
   <project-header [subTitle]="'Participantes'" [title]="'Participantes'">
     <button nz-button nzType="primary" (click)="onAddPeople()">
-      <i nz-icon nzType="plus" nzTheme="outline"></i> Añadir Participante 
+      <i nz-icon nzType="user-add" nzTheme="outline"></i> Añadir Participante 
     </button>
   </project-header>
   <div class="people">
@@ -33,7 +33,7 @@
           [nzSortDirections]="['ascend', 'descend', null]"
           [nzSortFn]="sortFn"
         >
-        <i nz-icon nzType="project" nzTheme="outline"></i> Nombre
+        <i nz-icon nzType="user" nzTheme="outline"></i> Nombre
         </th>
         <th
           [nzSortOrder]="null"
