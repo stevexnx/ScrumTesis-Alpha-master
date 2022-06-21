@@ -75,6 +75,7 @@ export class NavigationToolbarComponent implements OnInit, OnDestroy {
   deleteLocalStorage(){
     localStorage.removeItem('userId');
     localStorage.removeItem('name');
+    this.router.navigateByUrl('/register');
   }
 
 }

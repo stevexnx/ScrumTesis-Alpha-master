@@ -12,7 +12,7 @@ export interface UserState {
 }
 
 export const initialState: UserState = {
-  currentUserId: '611df5ab26282791ec096608',
+  currentUserId: localStorage.getItem('userId'),
   users: [],
   error: '',
 };
