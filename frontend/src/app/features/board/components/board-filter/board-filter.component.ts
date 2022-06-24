@@ -1,4 +1,10 @@
-import { Component, Input, OnInit, OnDestroy, ChangeDetectionStrategy } from '@angular/core';
+import {
+  Component,
+  Input,
+  OnInit,
+  OnDestroy,
+  ChangeDetectionStrategy,
+} from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { NzProgressModule } from 'ng-zorro-antd/progress';
 
@@ -15,11 +21,10 @@ import * as fromFilterSelectors from '@features/board/state/filter.selectors';
   selector: 'app-board-filter',
   templateUrl: './board-filter.component.html',
   styleUrls: ['./board-filter.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BoardFilterComponent implements OnInit, OnDestroy {
-  porcentaje=80;
-  
+  porcentaje = 80;
 
   @Input() assignedUsers$: Observable<User[]>;
   filterForm!: FormGroup;
@@ -30,32 +35,54 @@ export class BoardFilterComponent implements OnInit, OnDestroy {
   selectedUserIds: string[];
   private destroy$ = new Subject();
 
-  constructor(private fb: FormBuilder, private store: Store<{}>) { }
+  constructor(private fb: FormBuilder, private store: Store<{}>) {}
 
   ngOnInit(): void {
     this.filterForm = this.fb.group({
-      filterQuery: [null]
+      filterQuery: [null],
     });
 
     this.onlyMyIssues = this.store.select(fromFilterSelectors.getOnlyMyIssues);
-    this.recentlyUpdatedIssues = this.store.select(fromFilterSelectors.getRecentlyUpdatedIssues);
-    this.anyFilter = this.store.select(fromFilterSelectors.isAnyFilter);
-this.onlyMyIssues.subscribe(data => { 
-  console.log(data)
-}   )
-    this.filterForm.valueChanges.pipe(
-      debounceTime(400),
-      distinctUntilChanged()
-    ).subscribe(value => this.store.dispatch(fromFilterActions.setSearchTermFilter({ searchTerm: value.filterQuery }))
+    this.recentlyUpdatedIssues = this.store.select(
+      fromFilterSelectors.getRecentlyUpdatedIssues
     );
+    this.anyFilter = this.store.select(fromFilterSelectors.isAnyFilter);
+    this.onlyMyIssues.subscribe((data) => {
+      console.log(data);
+    });
+    this.filterForm.valueChanges
+      .pipe(debounceTime(400), distinctUntilChanged())
+      .subscribe((value) =>
+        this.store.dispatch(
+          fromFilterActions.setSearchTermFilter({
+            searchTerm: value.filterQuery,
+          })
+        )
+      );
 
-    this.store.select(fromFilterSelectors.getUserIds).pipe(takeUntil(this.destroy$))
-      .subscribe(userIds => this.selectedUserIds = userIds);
+    this.store
+      .select(fromFilterSelectors.getUserIds)
+      .pipe(takeUntil(this.destroy$))
+      .subscribe((userIds) => (this.selectedUserIds = userIds));
   }
 
   ngOnDestroy(): void {
     this.destroy$.next();
     this.destroy$.complete();
+  }
+
+  increase(): void {
+    this.porcentaje = this.porcentaje + 10;
+    if (this.porcentaje > 100) {
+      this.porcentaje = 100;
+    }
+  }
+
+  decline(): void {
+    this.porcentaje = this.porcentaje - 10;
+    if (this.porcentaje < 0) {
+      this.porcentaje = 0;
+    }
   }
 
   toggleUser(userId: string = 'unassigned'): void {
@@ -78,5 +105,4 @@ this.onlyMyIssues.subscribe(data => {
     this.filterForm.reset();
     this.store.dispatch(fromFilterActions.clearAllFilters());
   }
-
 }

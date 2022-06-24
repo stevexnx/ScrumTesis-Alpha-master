@@ -54,12 +54,24 @@
   </button>
 </ng-container>
 
-<button nz-button>
-  <label for="file"> Progreso </label>
-  <!-- <progress id="file" [value]="porcentaje" max="100"> </progress> -->
-  <nz-progress
-    nzStrokeLinecap="round"
-    [nzPercent]="porcentaje"
-    [nzStrokeColor]="{ '0%': '#108ee9', '100%': '#87d068' }"
-  ></nz-progress>
-</button>
+<div>
+  <button nz-button style="height: 100%">
+    <label for="file"> Progreso </label>
+    <!-- <progress id="file" [value]="porcentaje" max="100"> </progress> -->
+    <nz-progress
+      nzStrokeLinecap="round"
+      [nzPercent]="porcentaje"
+      [nzStrokeColor]="{ '0%': '#108ee9', '100%': '#87d068' }"
+      nzType="circle"
+    ></nz-progress>
+
+    <nz-button-group style="margin-left: 1rem;">
+      <button nz-button (click)="decline()">
+        <i nz-icon nzType="minus"></i>
+      </button>
+      <button nz-button (click)="increase()">
+        <i nz-icon nzType="plus"></i>
+      </button>
+    </nz-button-group>
+  </button>
+</div>
