@@ -18,7 +18,7 @@ import * as fromFilterSelectors from '@features/board/state/filter.selectors';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BoardFilterComponent implements OnInit, OnDestroy {
-  porcentaje=50;
+  porcentaje=80;
   
 
   @Input() assignedUsers$: Observable<User[]>;
