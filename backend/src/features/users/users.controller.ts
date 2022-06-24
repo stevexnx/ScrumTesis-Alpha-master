@@ -30,7 +30,7 @@ export class UsersController {
     const pwd = this.usersService.findByPwd(password);
 
     if (!user || !pwd) {
-      throw new BadRequestException('Invalid credentials');
+      throw new BadRequestException('Credenciales inválidas');
     }
 
     return user;

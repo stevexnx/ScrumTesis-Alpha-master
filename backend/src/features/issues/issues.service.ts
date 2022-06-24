@@ -45,7 +45,7 @@ export class IssuesService {
   async findById(id: string) {
     const found = await this.issueModel.findById(id);
     if (!found) {
-      throw new NotFoundException(`Issue with ID ${id} not found`);
+      throw new NotFoundException(`Tarea con el ID ${id} no encontrado`);
     }
     return found;
   }
@@ -63,7 +63,7 @@ export class IssuesService {
     }
 
     if (!result) {
-      throw new NotFoundException(`Issue with ID ${id} not found`);
+      throw new NotFoundException(`Tarea con el ID ${id} no encontrado`);
     }
     return result;
   }
@@ -77,7 +77,7 @@ export class IssuesService {
         .deleteOne({ _id: id }, { session })
         .exec();
       if (result.deletedCount === 0) {
-        throw new NotFoundException(`Issue with ID ${id} not found`);
+        throw new NotFoundException(`Tarea con el ID ${id} no encontrado`);
       }
       await this.commentsService.deleteCommentsByIssueId(id, session);
       await session.commitTransaction();
@@ -102,7 +102,7 @@ export class IssuesService {
       // Is 1 if the command executed correctly.
       if (result.ok !== 1) {
         throw new InternalServerErrorException(
-          `Error to delete the issues associated to the project with ID ${projectId}`,
+          `Error al eliminar las tareas asociadas con el proyecto con el ID ${projectId}`,
         );
       }
       await this.commentsService.deleteCommentsByIssueIds(issueIds, session);

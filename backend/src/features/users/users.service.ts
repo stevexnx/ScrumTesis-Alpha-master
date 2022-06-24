@@ -37,7 +37,7 @@ export class UsersService {
   async findOne(id: string) {
     const found = await this.userModel.findById(id);
     if (!found) {
-      throw new NotFoundException(`User with ID ${id} not found`);
+      throw new NotFoundException(`Usuario con el ID ${id} no encontrado`);
     }
     return found;
   }
@@ -55,7 +55,7 @@ export class UsersService {
     }
 
     if (!result) {
-      throw new NotFoundException(`User with ID ${id} not found`);
+      throw new NotFoundException(`Usuario con el ID ${id} no encontrado`);
     }
     return result;
   }
@@ -63,7 +63,7 @@ export class UsersService {
   async remove(id: string) {
     const result = await this.userModel.deleteOne({ _id: id }).exec();
     if (result.deletedCount === 0) {
-      throw new NotFoundException(`User with ID ${id} not found`);
+      throw new NotFoundException(`Usuario con el ID ${id} no encontrado`);
     }
   }
 
@@ -71,7 +71,7 @@ export class UsersService {
     const result = await this.userModel.findOne({ email });
 
     if (!result) {
-      throw new NotFoundException(`User not found`);
+      throw new NotFoundException(`Usuario no encontrado`);
     }
     return result;
   }
@@ -80,7 +80,7 @@ export class UsersService {
     const result = await this.userModel.findOne({ password });
 
     if (!result) {
-      throw new NotFoundException(`User not found`);
+      throw new NotFoundException(`Usuario no encontrado`);
     }
     return result;
   }

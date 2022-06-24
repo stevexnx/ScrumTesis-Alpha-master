@@ -52,7 +52,7 @@ export class CommentsService {
     }
 
     if (!result) {
-      throw new NotFoundException(`Comment with ID ${id} not found`);
+      throw new NotFoundException(`Comentario con el ID ${id} no encontrado`);
     }
     return result;
   }
@@ -60,7 +60,7 @@ export class CommentsService {
   async remove(id: string) {
     const result = await this.commentModel.deleteOne({ _id: id }).exec();
     if (result.deletedCount === 0) {
-      throw new NotFoundException(`Comment with ID ${id} not found`);
+      throw new NotFoundException(`Comentario con el ID ${id} no encontrado`);
     }
   }
 
@@ -73,7 +73,7 @@ export class CommentsService {
 
       if (result.ok !== 1) {
         throw new InternalServerErrorException(
-          `Error to delete the comments associated to the Issue with ID ${issueId}`,
+          `Error al eliminar los comentarios asociados a la tarea con el ID ${issueId}`,
         );
       }
     } catch (error) {
@@ -92,7 +92,7 @@ export class CommentsService {
 
       if (result.ok !== 1) {
         throw new InternalServerErrorException(
-          `Error to delete the comments associated to the issues of the Project`,
+          `Error al eliminar los comentarios asociados a las tareas del proyecto`,
         );
       }
     } catch (error) {

@@ -46,7 +46,7 @@ export class ProjectsService {
   async findById(id: string) {
     const found = await this.projectModel.findById(id);
     if (!found) {
-      throw new NotFoundException(`Project with ID ${id} not found`);
+      throw new NotFoundException(`Proyecto con el  ID ${id} no encontrado`);
     }
     return found;
   }
@@ -63,7 +63,7 @@ export class ProjectsService {
       mongooseErrorHandler(error);
     }
     if (!result) {
-      throw new NotFoundException(`Project with ID ${id} not found`);
+      throw new NotFoundException(`Proyecto con el  ID ${id} no encontrado`);
     }
     return result;
   }
@@ -78,7 +78,7 @@ export class ProjectsService {
         { session },
       );
       if (result.deletedCount === 0) {
-        throw new NotFoundException(`Project with ID ${id} not found`);
+        throw new NotFoundException(`Proyecto con el Id ${id} no encontrado`);
       }
 
       await this.issuesService.deleteIssuesByProjectId(id, session);
