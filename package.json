@@ -1,5 +1,5 @@
 {
-  "name": "kanban-project-management",
+  "name": "Scrumfullt",
   "version": "2.0.0",
   "description": "",
   "scripts": {
@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sldiaz04us/kanban-project-management.git"
+    "url": "git+https://github.com/sldiaz04us/Scrumfullt.git"
   },
   "keywords": [],
   "author": "Sergio Lopez Diaz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sldiaz04us/kanban-project-management/issues"
+    "url": "https://github.com/sldiaz04us/Scrumfullt/issues"
   },
-  "homepage": "https://github.com/sldiaz04us/kanban-project-management#readme",
+  "homepage": "https://github.com/sldiaz04us/Scrumfullt#readme",
   "dependencies": {
     "angular-progress-bar": "^1.0.11"
   }

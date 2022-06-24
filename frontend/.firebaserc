@@ -1,9 +1,9 @@
 {
   "targets": {
-    "kanban-project-managemen-69aa2": {
+    "Scrumfull-69aa2": {
       "hosting": {
         "frontend": [
-          "kanban-project-managemen-69aa2"
+          "Scrumfull-69aa2"
         ]
       }
     }

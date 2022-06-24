@@ -6,7 +6,7 @@ export class ProjectData {
       id: '140892',
       name: 'Sample Kanban Project',
       key: 'SKP',
-      url: 'https://github.com/sldiaz04us/kanban-project-management',
+      url: 'https://github.com/sldiaz04us/Scrumfullt',
       description: '',
       leader: {
         id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
@@ -62,7 +62,7 @@ export class ProjectData {
       id: '130921',
       name: 'Another Kanban Project',
       key: 'AKP',
-      url: 'https://github.com/sldiaz04us/kanban-project-management',
+      url: 'https://github.com/sldiaz04us/Scrumfullt',
       description: '',
       avatarUrl:
         'https://res.cloudinary.com/comparte/image/upload/v1624772344/130921.svg',

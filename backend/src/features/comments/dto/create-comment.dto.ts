@@ -1,6 +1,6 @@
 import { IsNotEmpty } from 'class-validator';
 
-import { User } from '@kanban-project-management/features/users/schemas/user.schema';
+import { User } from '@Scrumfullt/features/users/schemas/user.schema';
 
 export class CreateCommentDto {
   @IsNotEmpty()
