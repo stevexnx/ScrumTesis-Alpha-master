@@ -14,7 +14,7 @@ import { User } from '@core/interfaces/user';
 import { getCurrentUser } from '@features/user/state/user.selectors';
 import { loadUsers } from '@features/user/state/actions/user.actions';
 import { Location } from '@angular/common';
-
+import { NzProgressModule } from 'ng-zorro-antd/progress';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

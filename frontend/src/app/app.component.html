@@ -21,8 +21,9 @@
     <nz-layout *ngIf="canMenuVisible">
       <nz-content>
         <router-outlet></router-outlet>
+       
       </nz-content>
-      
+     
       
     </nz-layout>
   </nz-layout>
@@ -32,4 +33,5 @@
 
 <div class="center" class="content-body" *ngIf="!canMenuVisible">
   <router-outlet></router-outlet>
+  
 </div>

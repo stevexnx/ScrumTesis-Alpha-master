@@ -32,7 +32,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { RegisterComponent } from './components/pages/register/register.component';
 import { BarrazaComponent } from './barraza/barraza.component';
-import { NzProgressModule } from 'ng-zorro-antd/progress';
+
+
 
 registerLocaleData(en);
 
@@ -69,6 +70,7 @@ registerLocaleData(en);
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent],
+  exports: [ BarrazaComponent]
 })
 export class AppModule {
   

@@ -23,12 +23,14 @@ import { BoardKanbanColumnComponent } from './components/board-kanban-column/boa
 import { IssuesModule } from '@features/issues/issues.module';
 import * as fromFilter from './state/filter.reducer';
 
+
 @NgModule({
   declarations: [
     BoardHeaderComponent,
     BoardFilterComponent,
     BoardKanbanComponent,
     BoardKanbanColumnComponent,
+    
   ],
   imports: [
     CommonModule,

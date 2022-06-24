@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, OnDestroy, ChangeDetectionStrategy } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { NzProgressModule } from 'ng-zorro-antd/progress';
 
 import { Store } from '@ngrx/store';
 
@@ -17,6 +18,9 @@ import * as fromFilterSelectors from '@features/board/state/filter.selectors';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BoardFilterComponent implements OnInit, OnDestroy {
+  porcentaje=50;
+  
+
   @Input() assignedUsers$: Observable<User[]>;
   filterForm!: FormGroup;
   onlyMyIssues: Observable<boolean>;
@@ -36,7 +40,9 @@ export class BoardFilterComponent implements OnInit, OnDestroy {
     this.onlyMyIssues = this.store.select(fromFilterSelectors.getOnlyMyIssues);
     this.recentlyUpdatedIssues = this.store.select(fromFilterSelectors.getRecentlyUpdatedIssues);
     this.anyFilter = this.store.select(fromFilterSelectors.isAnyFilter);
-
+this.onlyMyIssues.subscribe(data => { 
+  console.log(data)
+}   )
     this.filterForm.valueChanges.pipe(
       debounceTime(400),
       distinctUntilChanged()
