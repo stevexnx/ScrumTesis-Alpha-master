@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
+import { BarrazaComponent } from './barraza/barraza.component';
 import { RegisterComponent } from './components/pages/register/register.component';
 import { LoginComponent } from './pages/login/login.component';
+import { NzProgressModule } from 'ng-zorro-antd/progress';
 
 const routes: Routes = [
   // {
@@ -9,6 +11,9 @@ const routes: Routes = [
   // },
   {
     path: '', component: LoginComponent
+  },
+  {
+    path: 'bar', component: BarrazaComponent
   },
   {
     path: 'register', component: RegisterComponent

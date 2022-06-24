@@ -31,11 +31,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { RegisterComponent } from './components/pages/register/register.component';
+import { BarrazaComponent } from './barraza/barraza.component';
+import { NzProgressModule } from 'ng-zorro-antd/progress';
 
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, RegisterComponent],
+  declarations: [AppComponent, LoginComponent, RegisterComponent, BarrazaComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -68,4 +70,6 @@ registerLocaleData(en);
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  
+}
