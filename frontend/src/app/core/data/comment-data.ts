@@ -38,8 +38,8 @@ export class CommentData {
       issueId: '9013',
       author: {
         id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-        name: 'Sergio Lopez Diaz',
-        email: 'sergio@kanban.com',
+        name: 'Scrumfull Lopez Diaz',
+        email: 'Scrumfull@kanban.com',
         avatarUrl:
           'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg',
       },
@@ -70,8 +70,8 @@ export class CommentData {
       issueId: '8542',
       author: {
         id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-        name: 'Sergio Lopez Diaz',
-        email: 'sergio@kanban.com',
+        name: 'Scrumfull Lopez Diaz',
+        email: 'Scrumfull@kanban.com',
         avatarUrl:
           'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg',
       },

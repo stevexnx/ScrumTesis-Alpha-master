@@ -28,7 +28,7 @@ export class RegisterComponent implements OnInit {
         this._router.navigateByUrl('');
       },
       err => {
-        alert('Fallo el registro, intentelo de nuevo')
+        alert('Falló el registro, intentelo de nuevo')
       }
     )
   }

@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
       localStorage.setItem('userId', data.id);
       localStorage.setItem('name', data.name);
     }, err => {
-      alert('Fallo autenticacion, credenciales invalidas');
+      alert('Falló autenticación, credenciales inválidas');
     });
   }
 

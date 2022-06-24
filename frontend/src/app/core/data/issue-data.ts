@@ -31,8 +31,8 @@ export class IssueData {
       updatedAt: '2021-07-01T14:40:01.262Z',
       reporter: {
         id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-        name: 'Sergio Lopez Diaz',
-        email: 'sergio@kanban.com',
+        name: 'Scrumfull Lopez Diaz',
+        email: 'Scrumfull@kanban.com',
         avatarUrl: 'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg',
       },
       assignees: [
@@ -80,15 +80,15 @@ export class IssueData {
       updatedAt: '2021-07-02T14:40:01.262Z',
       reporter: {
         id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-        name: 'Sergio Lopez Diaz',
-        email: 'sergio@kanban.com',
+        name: 'Scrumfull Lopez Diaz',
+        email: 'Scrumfull@kanban.com',
         avatarUrl: 'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg',
       },
       assignees: [
         {
           id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-          name: 'Sergio Lopez Diaz',
-          email: 'sergio@kanban.com',
+          name: 'Scrumfull Lopez Diaz',
+          email: 'Scrumfull@kanban.com',
           avatarUrl: 'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg',
         },
         {
@@ -118,15 +118,15 @@ export class IssueData {
       updatedAt: '2021-07-03T14:40:01.346Z',
       reporter: {
         id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-        name: 'Sergio Lopez Diaz',
-        email: 'sergio@kanban.com',
+        name: 'Scrumfull Lopez Diaz',
+        email: 'Scrumfull@kanban.com',
         avatarUrl: 'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg'
       },
       assignees: [
         {
           id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-          name: 'Sergio Lopez Diaz',
-          email: 'sergio@kanban.com',
+          name: 'Scrumfull Lopez Diaz',
+          email: 'Scrumfull@kanban.com',
           avatarUrl: 'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg'
         }
       ],
@@ -169,15 +169,15 @@ export class IssueData {
       updatedAt: '2021-07-04T14:48:00.807Z',
       reporter: {
         id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-        name: 'Sergio Lopez Diaz',
-        email: 'sergio@kanban.com',
+        name: 'Scrumfull Lopez Diaz',
+        email: 'Scrumfull@kanban.com',
         avatarUrl: 'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg'
       },
       assignees: [
         {
           id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-          name: 'Sergio Lopez Diaz',
-          email: 'sergio@kanban.com',
+          name: 'Scrumfull Lopez Diaz',
+          email: 'Scrumfull@kanban.com',
           avatarUrl: 'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg'
         }
       ],
@@ -239,15 +239,15 @@ export class IssueData {
       updatedAt: '2021-07-06T14:51:00.000Z',
       reporter: {
         id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-        name: 'Sergio Lopez Diaz',
-        email: 'sergio@kanban.com',
+        name: 'Scrumfull Lopez Diaz',
+        email: 'Scrumfull@kanban.com',
         avatarUrl: 'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg'
       },
       assignees: [
         {
           id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-          name: 'Sergio Lopez Diaz',
-          email: 'sergio@kanban.com',
+          name: 'Scrumfull Lopez Diaz',
+          email: 'Scrumfull@kanban.com',
           avatarUrl: 'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg'
         },
         {
@@ -309,15 +309,15 @@ export class IssueData {
       updatedAt: '2021-07-08T14:51:00.000Z',
       reporter: {
         id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-        name: 'Sergio Lopez Diaz',
-        email: 'sergio@kanban.com',
+        name: 'Scrumfull Lopez Diaz',
+        email: 'Scrumfull@kanban.com',
         avatarUrl: 'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg'
       },
       assignees: [
         {
           id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-          name: 'Sergio Lopez Diaz',
-          email: 'sergio@kanban.com',
+          name: 'Scrumfull Lopez Diaz',
+          email: 'Scrumfull@kanban.com',
           avatarUrl: 'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg'
         },
         {
@@ -382,8 +382,8 @@ export class IssueData {
       updatedAt: '2021-07-10T14:51:00.000Z',
       reporter: {
         id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-        name: 'Sergio Lopez Diaz',
-        email: 'sergio@kanban.com',
+        name: 'Scrumfull Lopez Diaz',
+        email: 'Scrumfull@kanban.com',
         avatarUrl: 'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg'
       },
       assignees: [],
@@ -406,8 +406,8 @@ export class IssueData {
       updatedAt: '2021-07-11T14:51:00.000Z',
       reporter: {
         id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-        name: 'Sergio Lopez Diaz',
-        email: 'sergio@kanban.com',
+        name: 'Scrumfull Lopez Diaz',
+        email: 'Scrumfull@kanban.com',
         avatarUrl: 'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg'
       },
       assignees: [],
@@ -426,8 +426,8 @@ export class IssueData {
       updatedAt: '2021-04-04T16:30:00.000Z',
       reporter: {
         id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-        name: 'Sergio Lopez Diaz',
-        email: 'sergio@kanban.com',
+        name: 'Scrumfull Lopez Diaz',
+        email: 'Scrumfull@kanban.com',
         avatarUrl: 'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg',
       },
       assignees: [],
@@ -446,8 +446,8 @@ export class IssueData {
       updatedAt: '2021-04-04T17:30:00.000Z',
       reporter: {
         id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-        name: 'Sergio Lopez Diaz',
-        email: 'sergio@kanban.com',
+        name: 'Scrumfull Lopez Diaz',
+        email: 'Scrumfull@kanban.com',
         avatarUrl: 'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg',
       },
       assignees: [{
@@ -471,15 +471,15 @@ export class IssueData {
       updatedAt: '2021-04-04T17:40:00.000Z',
       reporter: {
         id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-        name: 'Sergio Lopez Diaz',
-        email: 'sergio@kanban.com',
+        name: 'Scrumfull Lopez Diaz',
+        email: 'Scrumfull@kanban.com',
         avatarUrl: 'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg',
       },
       assignees: [
         {
           id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-          name: 'Sergio Lopez Diaz',
-          email: 'sergio@kanban.com',
+          name: 'Scrumfull Lopez Diaz',
+          email: 'Scrumfull@kanban.com',
           avatarUrl: 'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg',
         },
         {
@@ -504,8 +504,8 @@ export class IssueData {
       updatedAt: '2021-04-04T17:50:00.000Z',
       reporter: {
         id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-        name: 'Sergio Lopez Diaz',
-        email: 'sergio@kanban.com',
+        name: 'Scrumfull Lopez Diaz',
+        email: 'Scrumfull@kanban.com',
         avatarUrl: 'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg',
       },
       assignees: [
@@ -537,14 +537,14 @@ export class IssueData {
       updatedAt: '2021-04-05T19:30:00.000Z',
       reporter: {
         id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-        name: 'Sergio Lopez Diaz',
-        email: 'sergio@kanban.com',
+        name: 'Scrumfull Lopez Diaz',
+        email: 'Scrumfull@kanban.com',
         avatarUrl: 'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg',
       },
       assignees: [{
         id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-        name: 'Sergio Lopez Diaz',
-        email: 'sergio@kanban.com',
+        name: 'Scrumfull Lopez Diaz',
+        email: 'Scrumfull@kanban.com',
         avatarUrl: 'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg',
       }],
       projectId: '130921'
@@ -562,15 +562,15 @@ export class IssueData {
       updatedAt: '2021-04-06T16:30:00.000Z',
       reporter: {
         id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-        name: 'Sergio Lopez Diaz',
-        email: 'sergio@kanban.com',
+        name: 'Scrumfull Lopez Diaz',
+        email: 'Scrumfull@kanban.com',
         avatarUrl: 'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg',
       },
       assignees: [
         {
           id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-          name: 'Sergio Lopez Diaz',
-          email: 'sergio@kanban.com',
+          name: 'Scrumfull Lopez Diaz',
+          email: 'Scrumfull@kanban.com',
           avatarUrl: 'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg',
         },
         {

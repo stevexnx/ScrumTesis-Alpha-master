@@ -56,7 +56,7 @@ registerLocaleData(en);
     StoreModule.forRoot({}, {}),
     EffectsModule.forRoot([]),
     StoreDevtoolsModule.instrument({
-      name: 'Kanban Project Management',
+      name: 'Scrumfull',
       maxAge: 25,
       logOnly: environment.production,
     }),
