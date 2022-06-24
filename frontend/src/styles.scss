@@ -1,67 +1,73 @@
 /* You can add global styles to this file, and also import other style files */
-@import '@angular/material/prebuilt-themes/Indigo-pink.css';
+
+@import "@angular/material/prebuilt-themes/Indigo-pink.css";
 @import "~quill/dist/quill.core.css";
 @import "~quill/dist/quill.snow.css";
 
-html, body { height: 0%; 
+html,
+body {
+  height: 0%;
   background-image: url("https://cdn.discordapp.com/attachments/980597217398231040/988237848912224307/unknown.png");
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: 100% 0%;}
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+  background-position: 100% 0%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
-.form-container{
-    opacity: 0.7;
-    display: block;
-    max-width: 400px;
-    background: #eceff1;
-    padding: 48px;
-    margin-left: 500px;
-    margin-top: 100px;
-    font-size: 15px;
-    font-weight: bold;
-  }
-  
-  .form-container mat-form-field {
-    font-size: 15px;
-    font-weight: bold;
-    width: 100%;
-  }
-  
-  .example-form {
-    min-width: 150px;
-    max-width: 800px;
-    width: 100%;
-  }
-  
-  .example-full-width {
-    width: 100%;
-  }
-  
-  .center{
-    display: flex;
-    justify-content: center;
-  }
-  
-  
-  .margin-top{
-    margin-top: 16px;
-  }
-  
-  .text-center{
-    text-align: center;;
-  }
-  
-  .button{
-    width: 100%;
-  }
-  
-  .text-danger{
-    color: red;
-  }
+.form-container {
+  opacity: 0.7;
+  display: block;
+  max-width: 400px;
+  background: #eceff1;
+  padding: 48px;
+  margin-left: 500px;
+  margin-top: 100px;
+  font-size: 15px;
+  font-weight: bold;
+}
 
-  .center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.form-container mat-form-field {
+  font-size: 15px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.margin-top {
+  margin-top: 16px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.button {
+  width: 100%;
+}
+
+.text-danger {
+  color: red;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

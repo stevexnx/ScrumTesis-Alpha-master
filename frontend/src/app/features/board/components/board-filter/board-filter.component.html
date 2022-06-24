@@ -37,25 +37,29 @@
   [class.is-active]="onlyMyIssues | async"
   (click)="toggleOnlyMyIssues()"
 >
-<i nz-icon nzType="read" nzTheme="outline"></i>Mis tareas
+  <i nz-icon nzType="read" nzTheme="outline"></i>Mis tareas
 </button>
 <button
   nz-button
   [class.is-active]="recentlyUpdatedIssues | async"
   (click)="toggleRecentlyUpdatedIssues()"
 >
-<i nz-icon nzType="loading" nzTheme="outline"></i> Actualizado recientemente
+  <i nz-icon nzType="loading" nzTheme="outline"></i> Actualizado recientemente
 </button>
 
 <ng-container *ngIf="anyFilter | async">
   <nz-divider nzType="vertical"></nz-divider>
-  <button nz-button (click)="clearAll()"><i nz-icon nzType="clear" nzTheme="outline"></i>Limpiar</button>
-
+  <button nz-button (click)="clearAll()">
+    <i nz-icon nzType="clear" nzTheme="outline"></i>Limpiar
+  </button>
 </ng-container>
 
-<button>
+<button nz-button>
   <label for="file"> Progreso </label>
-
-  <progress id="file" [value]="porcentaje" max="100"> </progress>
-  
+  <!-- <progress id="file" [value]="porcentaje" max="100"> </progress> -->
+  <nz-progress
+    nzStrokeLinecap="round"
+    [nzPercent]="porcentaje"
+    [nzStrokeColor]="{ '0%': '#108ee9', '100%': '#87d068' }"
+  ></nz-progress>
 </button>

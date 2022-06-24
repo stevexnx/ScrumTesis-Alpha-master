@@ -14,6 +14,7 @@ import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzAvatarModule } from 'ng-zorro-antd/avatar';
 import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
+import { NzProgressModule } from 'ng-zorro-antd/progress';
 
 import { IconsProviderModule } from 'src/app/icons-provider.module';
 import { BoardHeaderComponent } from './components/board-header/board-header.component';
@@ -23,14 +24,12 @@ import { BoardKanbanColumnComponent } from './components/board-kanban-column/boa
 import { IssuesModule } from '@features/issues/issues.module';
 import * as fromFilter from './state/filter.reducer';
 
-
 @NgModule({
   declarations: [
     BoardHeaderComponent,
     BoardFilterComponent,
     BoardKanbanComponent,
     BoardKanbanColumnComponent,
-    
   ],
   imports: [
     CommonModule,
@@ -43,16 +42,13 @@ import * as fromFilter from './state/filter.reducer';
     NzFormModule,
     NzInputModule,
     NzAvatarModule,
+    NzProgressModule,
     NzToolTipModule,
     NzDividerModule,
     IssuesModule,
     DragDropModule,
-    StoreModule.forFeature(fromFilter.filterFeatureKey, fromFilter.reducer)
+    StoreModule.forFeature(fromFilter.filterFeatureKey, fromFilter.reducer),
   ],
-  exports: [
-    BoardHeaderComponent,
-    BoardFilterComponent,
-    BoardKanbanComponent,
-  ]
+  exports: [BoardHeaderComponent, BoardFilterComponent, BoardKanbanComponent],
 })
-export class BoardModule { }
+export class BoardModule {}
