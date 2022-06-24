@@ -18,7 +18,7 @@ export const comments = [
     issueId: '612dd83cd56ea095fc673dc6',
     author: {
       _id: '611df5ab26282791ec096608',
-      name: 'Scrumfull Lopez Diaz',
+      name: 'Scrumfull t',
       email: 'Scrumfull@kanban.com',
       avatarUrl:
         'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg',

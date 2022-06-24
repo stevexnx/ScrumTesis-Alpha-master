@@ -4,7 +4,7 @@ export class UserData {
   static users: User[] = [
     {
       id: 'd65047e5-f4cf-4caa-9a38-6073dcbab7d1',
-      name: 'Scrumfull Lopez Diaz',
+      name: 'Scrumfull t',
       email: 'Scrumfull@kanban.com',
       avatarUrl:
         'https://res.cloudinary.com/comparte/image/upload/v1625469572/my-linkedin-avatar.jpg',
