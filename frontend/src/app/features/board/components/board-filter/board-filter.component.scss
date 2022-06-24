@@ -19,7 +19,7 @@ form {
     display: flex;
 
     border-radius: 50%;
-    margin-left: -0.25rem;
+    margin-left: 0.25rem;
 
     cursor: pointer;
     transition: transform 0.1s ease-in-out;
@@ -81,4 +81,9 @@ nz-divider {
   &:hover {
     background-color: lighten(#00A8CC, 10%);
   }
+nz-progress{
+  margin-right: 8px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
 }
