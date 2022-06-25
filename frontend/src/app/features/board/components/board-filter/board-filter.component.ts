@@ -71,19 +71,19 @@ export class BoardFilterComponent implements OnInit, OnDestroy {
     this.destroy$.complete();
   }
 
-  increase(): void {
-    this.porcentaje = this.porcentaje + 10;
-    if (this.porcentaje > 100) {
-      this.porcentaje = 100;
-    }
-  }
+  // increase(): void {
+  //   this.porcentaje = this.porcentaje + 10;
+  //   if (this.porcentaje > 100) {
+  //     this.porcentaje = 100;
+  //   }
+  // }
 
-  decline(): void {
-    this.porcentaje = this.porcentaje - 10;
-    if (this.porcentaje < 0) {
-      this.porcentaje = 0;
-    }
-  }
+  // decline(): void {
+  //   this.porcentaje = this.porcentaje - 10;
+  //   if (this.porcentaje < 0) {
+  //     this.porcentaje = 0;
+  //   }
+  // }
 
   toggleUser(userId: string = 'unassigned'): void {
     this.store.dispatch(fromFilterActions.toggleUser({ userId }));

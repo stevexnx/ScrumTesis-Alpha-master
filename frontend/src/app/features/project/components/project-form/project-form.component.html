@@ -28,7 +28,7 @@
         <input nz-input formControlName="key" placeholder="Clave única"/>
         <ng-template #keyErrorTempl let-control>
           <ng-container *ngIf="control.hasError('required')">
-            La clave no puede estar vacia
+            La clave no puede estar vacía
           </ng-container>
           <ng-container *ngIf="control.hasError('minlength')">
             Debes introducir mínimo dos caracteres
