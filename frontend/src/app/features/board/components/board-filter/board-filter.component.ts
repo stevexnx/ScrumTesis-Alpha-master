@@ -47,9 +47,9 @@ export class BoardFilterComponent implements OnInit, OnDestroy {
       fromFilterSelectors.getRecentlyUpdatedIssues
     );
     this.anyFilter = this.store.select(fromFilterSelectors.isAnyFilter);
-    this.onlyMyIssues.subscribe((data) => {
-      console.log(data);
-    });
+    // this.onlyMyIssues.subscribe((data) => {
+    //   console.log(data);
+    // });
     this.filterForm.valueChanges
       .pipe(debounceTime(400), distinctUntilChanged())
       .subscribe((value) =>
