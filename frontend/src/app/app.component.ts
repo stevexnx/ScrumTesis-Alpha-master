@@ -51,7 +51,7 @@ export class AppComponent implements OnInit, OnDestroy {
     this.store.dispatch(ProjectPageActions.loadProjects());
     this.projects$ = combineLatest([this.store.select(getProjects)]).pipe(
       switchMap(([projects]) => {
-        const id = localStorage.getItem('userId');
+        const id = localStorage.getItem('currentuserId');
         return of(
           projects?.filter((p) => {
             Boolean(id)
