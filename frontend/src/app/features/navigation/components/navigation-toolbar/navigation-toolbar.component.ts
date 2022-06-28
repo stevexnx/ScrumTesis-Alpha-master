@@ -54,7 +54,7 @@ export class NavigationToolbarComponent implements OnInit, OnDestroy {
     this.store.dispatch(fromFilterActions.clearAllFilters());
     this.router.navigateByUrl('board');
   }
-
+//creacion tareas possibly
   openCreateIssueModal() {
     this.modalService.create({
       nzTitle: 'Crear asignación',

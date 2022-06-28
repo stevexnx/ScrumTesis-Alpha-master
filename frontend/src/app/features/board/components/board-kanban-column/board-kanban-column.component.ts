@@ -28,8 +28,8 @@ export class BoardKanbanColumnComponent implements OnInit, OnDestroy {
   issues$: Observable<Issue[]>;
   issuesCount$: Observable<number>;
   anyFilter: Observable<boolean>;
-  totalIssuesFiltered: Observable<number>;
-
+  totalIssuesFiltered: number;
+  totalIssues: number;
   currentUserId: string;
   private destroy$ = new Subject();
 
@@ -40,6 +40,10 @@ export class BoardKanbanColumnComponent implements OnInit, OnDestroy {
       .subscribe(currentUserId => this.currentUserId = currentUserId);
 
     this.anyFilter = this.store.select(fromFilterSelectors.isAnyFilter);
+    //codigo para total de tareas
+    this.store
+    .select(getAllIssues)
+    .subscribe((allIsues) => (this.totalIssues = allIsues.length));
 
     this.issues$ = combineLatest([
       this.store.select(getAllIssues)
@@ -54,7 +58,7 @@ export class BoardKanbanColumnComponent implements OnInit, OnDestroy {
     ]).pipe(
       switchMap(([issues, filterState]) => this.filterIssues(issues, filterState)
       ),
-      tap(issues => this.totalIssuesFiltered = of(issues.length))
+      tap(issues => this.totalIssuesFiltered = (issues.length))
     )
   }
 
