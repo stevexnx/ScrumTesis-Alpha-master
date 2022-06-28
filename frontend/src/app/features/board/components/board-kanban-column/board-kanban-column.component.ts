@@ -88,7 +88,7 @@ export class BoardKanbanColumnComponent implements OnInit, OnDestroy {
 
       const issueUserIds = issue.assignees.map(u => u.id);
 
-      if (!issueUserIds.length) { // no user assigned in the issue
+      if (!issueUserIds.length) { // revisar esto detenidamente para lo que falta de equipos
         issueUserIds.push('unassigned');
       }
       const isIncludeUsers = userIds.length

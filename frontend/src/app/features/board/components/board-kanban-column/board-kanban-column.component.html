@@ -4,7 +4,6 @@
     <ng-container *ngIf="anyFilter | async"
       >{{ totalIssuesFiltered | async }} de
     </ng-container>
-    <!-- <label for="file"> Porcentaje </label> -->
     <progress id="file" value="{{totalIssuesFiltered | async}}" max="12"> </progress>
     {{ issuesCount$ | async }}
   </h3>

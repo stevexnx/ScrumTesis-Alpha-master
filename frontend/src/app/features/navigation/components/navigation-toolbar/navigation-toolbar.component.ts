@@ -26,7 +26,6 @@ export class NavigationToolbarComponent implements OnInit, OnDestroy {
   @Input() projects$: Observable<Project[]>;
   @Input() currentUser: User;
   isCurrentProject$: Observable<boolean>;
-
   private destroy$ = new Subject();
 
   isSidebarCollapsed = false;
@@ -73,9 +72,10 @@ export class NavigationToolbarComponent implements OnInit, OnDestroy {
   }
 
   deleteLocalStorage(){
+    //para eliminar datos de sesion y redirigir al desconectarse
     localStorage.removeItem('userId');
     localStorage.removeItem('name');
-    this.router.navigateByUrl('/register');
+    this.router.navigateByUrl('');
   }
 
 }
