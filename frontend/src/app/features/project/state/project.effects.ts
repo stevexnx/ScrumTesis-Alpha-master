@@ -36,7 +36,8 @@ export class ProjectEffects {
           catchError((error) => {
             this.feedbackService.createNotification(
               FeedbackTypes.error,
-              'Projects could not be loaded',
+              //fallo en rojo de login o carga al cambiar
+              'La app dió un fallo inesperado',
               error.message
             );
             return of(ProjectApiActions.loadProjectsFailure({ error }));
@@ -60,7 +61,7 @@ export class ProjectEffects {
           catchError((error) => {
             this.feedbackService.createNotification(
               FeedbackTypes.error,
-              'Project could not be created',
+              'La app dió un fallo inesperado',
               error.message
             );
             return of(ProjectApiActions.createProjectFailure({ error }));
@@ -87,7 +88,7 @@ export class ProjectEffects {
             catchError((error) => {
               this.feedbackService.createNotification(
                 FeedbackTypes.error,
-                'Project could not be updated',
+                'La app dió un fallo inesperado',
                 error.message
               );
               return of(ProjectApiActions.updateProjectFailure({ error }));
@@ -115,7 +116,7 @@ export class ProjectEffects {
           catchError((error) => {
             this.feedbackService.createNotification(
               FeedbackTypes.error,
-              'Project could not be moved to trash',
+              'El proyecto no pudo ser eliminado',
               error.message
             );
             return of(ProjectApiActions.deleteProjectFailure({ error }));
@@ -143,7 +144,7 @@ export class ProjectEffects {
             catchError((error) => {
               this.feedbackService.createNotification(
                 FeedbackTypes.error,
-                'User could not be removed',
+                'Usuario no pudo eliminarse',
                 error.message
               );
               return of(ProjectApiActions.updateProjectFailure({ error }));
