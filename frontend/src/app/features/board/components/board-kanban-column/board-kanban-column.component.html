@@ -4,6 +4,7 @@
     <ng-container *ngIf="anyFilter | async"
       >{{ totalIssuesFiltered  }} de
     </ng-container>
+    
     <progress id="file" [value]="totalIssuesFiltered" [max]="totalIssues"> </progress>
     {{ issuesCount$ | async }}
   </h3>
