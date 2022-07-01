@@ -42,9 +42,12 @@
 <button
   nz-button
   [class.is-active]="recentlyUpdatedIssues | async"
+
   (click)="toggleRecentlyUpdatedIssues()"
+
 >
-  <i nz-icon nzType="loading" nzTheme="outline"></i> Actualizado recientemente
+
+  <i nz-icon nzType="loading-3-quarters" nzTheme="outline"></i> Actualizado recientemente
 </button>
 
 <ng-container *ngIf="anyFilter | async">
