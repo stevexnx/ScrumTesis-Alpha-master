@@ -1,2 +1,5 @@
 npm run start:backend
 npm run start:frontend
+pendientes : deshabilitar boton de registro y login si no esta rellenado
+corregir que pase sin password correcto
+que si eliminas un participante se borre de la tarea
