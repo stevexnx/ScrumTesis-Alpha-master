@@ -79,10 +79,10 @@ export class UsersService {
   async findByPwd(password: string){
     const result = await this.userModel.findOne({ password });
 
-    if (!result) {
-      throw new NotFoundException(`Usuario no encontrado`);
-    }
-    return result;
+    // if (!result) {
+    //   throw new NotFoundException(`Usuario no encontrado`);
+    // }
+    // return result;
   }
 
 }
