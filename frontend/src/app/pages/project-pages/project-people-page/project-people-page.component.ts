@@ -64,7 +64,7 @@ export class ProjectPeoplePageComponent implements OnInit {
       nzMaskClosable: false
     });
   }
-
+     //ELIMINAR PARTICIPANTES
   onDeletePeople(user: User): void {
     this.modalService.confirm({
       nzTitle: `Eliminar ${user.name}`,
@@ -83,6 +83,7 @@ export class ProjectPeoplePageComponent implements OnInit {
 
         this.store.dispatch(ProjectPageActions.removePeople({ userId: user.id }));
       })
+      
     })
   }
 
