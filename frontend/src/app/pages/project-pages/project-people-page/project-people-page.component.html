@@ -49,6 +49,8 @@
       <tr *ngFor="let data of peopleTable.data">
         <td>
           <div class="user-info">
+            <!-- Esto es para vambiar imagen predefinida por la de la db
+            <img [src]="data.avatarUrl" alt="User picture" /> -->
             <img [src]=" '../../../../assets/no-image.jpg' " alt="User picture" />
             <span>{{ data.name }}</span>
           </div>
