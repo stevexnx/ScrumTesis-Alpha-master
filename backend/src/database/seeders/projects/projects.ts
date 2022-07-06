@@ -14,7 +14,7 @@ export const projects = [
     _id: '611e1977bd926c6f3877a0f5',
     name: 'Sample Kanban Project',
     key: 'SKP',
-    url: 'https://github.com/sldiaz04us/Scrumfullt',
+    url: 'https://github.com/sldiaz04us/scrumfull',
     avatarUrl:
       'https://res.cloudinary.com/comparte/image/upload/v1624772344/140892.svg',
     leader: {

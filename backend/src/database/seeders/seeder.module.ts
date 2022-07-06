@@ -3,11 +3,11 @@ import { ConfigModule } from '@nestjs/config';
 
 import { Seeder } from './seeder.service';
 import { UserSeederModule } from './users/user-seeder.module';
-import { configValidationSchema } from '@Scrumfullt/config/app/config.schema';
+import { configValidationSchema } from '@scrumfull/config/app/config.schema';
 import { ProjectSeederModule } from './projects/project-seeder.module';
 import { IssueSeederModule } from './issues/issue-seeder.module';
 import { CommentSeederModule } from './comments/comment-seeder.module';
-import { MongoRootProviderModule } from '@Scrumfullt/providers/database/mongo/root-provider.module';
+import { MongoRootProviderModule } from '@scrumfull/providers/database/mongo/root-provider.module';
 
 @Module({
   imports: [

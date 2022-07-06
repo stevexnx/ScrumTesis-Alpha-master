@@ -6,7 +6,7 @@ import { Model, ClientSession } from 'mongoose';
 import {
   User,
   UserDocument,
-} from '@Scrumfullt/features/users/schemas/user.schema';
+} from '@scrumfull/features/users/schemas/user.schema';
 import { users } from './users';
 
 @Injectable()

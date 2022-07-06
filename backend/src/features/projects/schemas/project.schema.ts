@@ -2,8 +2,8 @@ import { Schema, Prop, SchemaFactory } from '@nestjs/mongoose';
 
 import { Document } from 'mongoose';
 
-import { ProjectCategory } from '@Scrumfullt/features/projects/project-category.enum';
-import { User } from '@Scrumfullt/features/users/schemas/user.schema';
+import { ProjectCategory } from '@scrumfull/features/projects/project-category.enum';
+import { User } from '@scrumfull/features/users/schemas/user.schema';
 
 export type ProjectDocument = Project & Document;
 @Schema({ timestamps: true, toJSON: { virtuals: true } })

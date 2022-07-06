@@ -2,7 +2,7 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 
 import { Document } from 'mongoose';
 
-import { User } from '@Scrumfullt/features/users/schemas/user.schema';
+import { User } from '@scrumfull/features/users/schemas/user.schema';
 
 export type CommentDocument = Comment & Document;
 

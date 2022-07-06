@@ -4,7 +4,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import {
   User,
   UserSchema,
-} from '@Scrumfullt/features/users/schemas/user.schema';
+} from '@scrumfull/features/users/schemas/user.schema';
 import { UserSeeder } from './user-seeder.service';
 
 @Module({

@@ -6,8 +6,8 @@ import { ClientSession, Model } from 'mongoose';
 import { CreateProjectDto } from './dto/create-project.dto';
 import { UpdateProjectDto } from './dto/update-project.dto';
 import { Project, ProjectDocument } from './schemas/project.schema';
-import { mongooseErrorHandler } from '@Scrumfullt/common/helpers/mongoose-error-handler';
-import { IssuesService } from '@Scrumfullt/features/issues/issues.service';
+import { mongooseErrorHandler } from '@scrumfull/common/helpers/mongoose-error-handler';
+import { IssuesService } from '@scrumfull/features/issues/issues.service';
 import { GetProjectFilterDto } from './dto/get-project-filter.dto';
 import { User, UserDocument } from '../users/schemas/user.schema';
 

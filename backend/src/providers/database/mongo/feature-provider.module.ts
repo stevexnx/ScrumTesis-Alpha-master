@@ -6,7 +6,7 @@ import { Connection } from 'mongoose';
 import {
   Issue,
   IssueSchema,
-} from '@Scrumfullt/features/issues/schemas/issue.schema';
+} from '@scrumfull/features/issues/schemas/issue.schema';
 
 @Module({
   imports: [

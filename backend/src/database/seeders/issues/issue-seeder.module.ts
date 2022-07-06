@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 
 import { IssueSeeder } from './issue-seeder.service';
-import { MongoFeatureProviderModule } from '@Scrumfullt/providers/database/mongo/feature-provider.module';
+import { MongoFeatureProviderModule } from '@scrumfull/providers/database/mongo/feature-provider.module';
 
 @Module({
   imports: [MongoFeatureProviderModule],

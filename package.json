@@ -1,5 +1,5 @@
 {
-  "name": "Scrumfullt",
+  "name": "scrumfull",
   "version": "2.0.0",
   "description": "",
   "scripts": {
@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sldiaz04us/Scrumfullt.git"
+    "url": "git+https://github.com/sldiaz04us/scrumfull.git"
   },
   "keywords": [],
   "author": "Steven y nico",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sldiaz04us/Scrumfullt/issues"
+    "url": "https://github.com/sldiaz04us/scrumfull/issues"
   },
-  "homepage": "https://github.com/sldiaz04us/Scrumfullt#readme",
+  "homepage": "https://github.com/sldiaz04us/scrumfull#readme",
   "dependencies": {
     "angular-progress-bar": "^1.0.11"
   }

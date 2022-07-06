@@ -6,7 +6,7 @@ import { Model, ClientSession } from 'mongoose';
 import {
   Comment,
   CommentDocument,
-} from '@Scrumfullt/features/comments/schemas/comment.schema';
+} from '@scrumfull/features/comments/schemas/comment.schema';
 import { comments } from './comments';
 
 @Injectable()

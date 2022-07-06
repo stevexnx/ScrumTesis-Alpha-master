@@ -6,7 +6,7 @@ import { Model, ClientSession } from 'mongoose';
 import {
   Issue,
   IssueDocument,
-} from '@Scrumfullt/features/issues/schemas/issue.schema';
+} from '@scrumfull/features/issues/schemas/issue.schema';
 import { issues } from './issues';
 
 @Injectable()

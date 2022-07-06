@@ -5,7 +5,7 @@ import { ProjectSeeder } from './project-seeder.service';
 import {
   Project,
   ProjectSchema,
-} from '@Scrumfullt/features/projects/schemas/project.schema';
+} from '@scrumfull/features/projects/schemas/project.schema';
 
 @Module({
   imports: [

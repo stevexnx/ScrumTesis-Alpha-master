@@ -4,7 +4,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import {
   Comment,
   CommentSchema,
-} from '@Scrumfullt/features/comments/schemas/comment.schema';
+} from '@scrumfull/features/comments/schemas/comment.schema';
 import { CommentSeeder } from './comment-seeder.service';
 
 @Module({

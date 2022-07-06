@@ -10,9 +10,9 @@ import { ClientSession, Model } from 'mongoose';
 import { CreateIssueDto } from './dto/create-issue.dto';
 import { UpdateIssueDto } from './dto/update-issue.dto';
 import { Issue, IssueDocument } from './schemas/issue.schema';
-import { mongooseErrorHandler } from '@Scrumfullt/common/helpers/mongoose-error-handler';
+import { mongooseErrorHandler } from '@scrumfull/common/helpers/mongoose-error-handler';
 import { GetIssueFilterDto } from './dto/get-issue-filter.dto';
-import { CommentsService } from '@Scrumfullt/features/comments/comments.service';
+import { CommentsService } from '@scrumfull/features/comments/comments.service';
 
 @Injectable()
 export class IssuesService {

@@ -10,7 +10,7 @@ import { ClientSession, Model } from 'mongoose';
 import { CreateCommentDto } from './dto/create-comment.dto';
 import { UpdateCommentDto } from './dto/update-comment.dto';
 import { Comment, CommentDocument } from './schemas/comment.schema';
-import { mongooseErrorHandler } from '@Scrumfullt/common/helpers/mongoose-error-handler';
+import { mongooseErrorHandler } from '@scrumfull/common/helpers/mongoose-error-handler';
 import { GetCommentFilterDto } from './dto/get-comment-filter.dto';
 
 @Injectable()

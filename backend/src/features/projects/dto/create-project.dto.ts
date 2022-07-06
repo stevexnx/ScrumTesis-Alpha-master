@@ -1,7 +1,7 @@
 import { IsIn, IsNotEmpty, IsOptional, MinLength } from 'class-validator';
 
-import { ProjectCategory } from '@Scrumfullt/features/projects/project-category.enum';
-import { User } from '@Scrumfullt/features/users/schemas/user.schema';
+import { ProjectCategory } from '@scrumfull/features/projects/project-category.enum';
+import { User } from '@scrumfull/features/users/schemas/user.schema';
 
 export class CreateProjectDto {
   @IsNotEmpty()

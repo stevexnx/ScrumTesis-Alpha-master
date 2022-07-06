@@ -6,10 +6,10 @@ import {
   MinLength,
 } from 'class-validator';
 
-import { IssueType } from '@Scrumfullt/features/issues/enums/issue-type.enum';
-import { IssueStatus } from '@Scrumfullt/features/issues/enums/issue-status.enum';
-import { IssuePriority } from '@Scrumfullt/features/issues/enums/issue-priority.enum';
-import { User } from '@Scrumfullt/features/users/schemas/user.schema';
+import { IssueType } from '@scrumfull/features/issues/enums/issue-type.enum';
+import { IssueStatus } from '@scrumfull/features/issues/enums/issue-status.enum';
+import { IssuePriority } from '@scrumfull/features/issues/enums/issue-priority.enum';
+import { User } from '@scrumfull/features/users/schemas/user.schema';
 
 export class CreateIssueDto {
   @IsNotEmpty()

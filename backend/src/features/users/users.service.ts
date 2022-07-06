@@ -6,7 +6,7 @@ import { Model } from 'mongoose';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { User, UserDocument } from './schemas/user.schema';
-import { mongooseErrorHandler } from '@Scrumfullt/common/helpers/mongoose-error-handler';
+import { mongooseErrorHandler } from '@scrumfull/common/helpers/mongoose-error-handler';
 import { GetUserFilterDto } from './dto/get-user-filter.dto';
 
 @Injectable()

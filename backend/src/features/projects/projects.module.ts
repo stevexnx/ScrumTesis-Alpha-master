@@ -4,7 +4,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { ProjectsService } from './projects.service';
 import { ProjectsController } from './projects.controller';
 import { Project, ProjectSchema } from './schemas/project.schema';
-import { IssuesModule } from '@Scrumfullt/features/issues/issues.module';
+import { IssuesModule } from '@scrumfull/features/issues/issues.module';
 
 @Module({
   imports: [
