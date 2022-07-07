@@ -2,7 +2,7 @@
   <nz-form-item>
     <nz-form-control>
       <nz-input-group nzSuffixIcon="search">
-        <input formControlName="filterQuery" nz-input />
+        <input formControlName="filterQuery" nz-input placeholder="Filtrar nombres de tarea" />
       </nz-input-group>
     </nz-form-control>
   </nz-form-item>
@@ -47,7 +47,7 @@
 
 >
 
-  <i nz-icon nzType="loading-3-quarters" nzTheme="outline"></i> Actualizado recientemente
+  <i nz-icon nzType="clock-circle" nzTheme="outline"></i> Actualizado recientemente
 </button>
 
 <ng-container *ngIf="anyFilter | async">

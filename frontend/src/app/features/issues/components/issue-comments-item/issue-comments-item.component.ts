@@ -77,7 +77,7 @@ export class IssueCommentsItemComponent {
       nzOkDanger: true,
       nzOnOk: () => new Promise(resolve => {
         this.actionSubject.pipe(
-          skip(1), // because actionSubject is a BehaviorSubject and the user can delete more than one comment.
+          skip(1), 
           ofType(
             CommentApiActions.deleteCommentSuccess,
             CommentApiActions.deleteCommentFailure

@@ -16,7 +16,7 @@ import * as fromUserSelectors from '@features/user/state/user.selectors';
 import { DateUtil } from '@core/utils/date';
 
 @Component({
-  // eslint-disable-next-line @angular-eslint/component-selector
+
   selector: '[app-board-kanban-column]',
   templateUrl: './board-kanban-column.component.html',
   styleUrls: ['./board-kanban-column.component.scss'],
@@ -92,7 +92,7 @@ export class BoardKanbanColumnComponent implements OnInit, OnDestroy {
 
       const issueUserIds = issue.assignees.map(u => u.id);
 
-      if (!issueUserIds.length) { // revisar esto detenidamente para lo que falta de equipos
+      if (!issueUserIds.length) { 
         issueUserIds.push('unassigned');
       }
       const isIncludeUsers = userIds.length
